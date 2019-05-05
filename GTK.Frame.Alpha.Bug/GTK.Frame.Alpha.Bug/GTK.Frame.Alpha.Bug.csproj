@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MainPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Xamarin.Forms.Build.Tasks\Xamarin.Forms.Build.Tasks.csproj" />
+    <ProjectReference Include="..\..\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj" />
+    <ProjectReference Include="..\..\Xamarin.Forms.Pages\Xamarin.Forms.Pages.csproj" />
+    <ProjectReference Include="..\..\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MainPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
