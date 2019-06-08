@@ -22,7 +22,7 @@
   <files>
     <file src="..\Xamarin.Forms.Platform.GTK\Libs\webkit-sharp\webkit-sharp.dll" target="lib\net45"/>
     <file src="..\Xamarin.Forms.Platform.GTK\Libs\webkit-sharp\webkit-sharp.dll.config" target="content"/>
-    <file src="..\Xamarin.Forms.Platform.GTK\bin\$Configuration$\Xamarin.Forms.Platform.GTK.dll" target="lib\net45"/>
-    <file src="..\Xamarin.Forms.Platform.GTK\bin\$Configuration$\Xamarin.Forms.Platform.GTK.*pdb" target="lib\net45"/>
+    <file src="..\Xamarin.Forms.Platform.GTK\bin\Debug\Xamarin.Forms.Platform.GTK.dll" target="lib\net45"/>
+    <file src="..\Xamarin.Forms.Platform.GTK\bin\Debug\Xamarin.Forms.Platform.GTK.*pdb" target="lib\net45"/>
   </files>
 </package>
