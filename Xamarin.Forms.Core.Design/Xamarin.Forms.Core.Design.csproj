@@ -45,6 +45,7 @@
     <Reference Include="System.Xaml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" Condition="$([MSBuild]::IsOsPlatform('Linux'))" />
     <PackageReference Include="Xamarin.Forms.Design" Version="1.0.26-pre" Condition=" '$(OS)' != 'Unix' " />
   </ItemGroup>
   <ItemGroup Condition=" '$(OS)' != 'Unix' ">
